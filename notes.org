@@ -1,0 +1,9 @@
+* Notes
+My personal notes about the project. Mainly for keeping track of time spent on different tasks
+* Todos
+** TODO add a readme
+:LOGBOOK:
+CLOCK: [2022-09-10 Sat 07:03]
+CLOCK: [2022-09-10 Sat 07:01]--[2022-09-10 Sat 07:03] =>  0:02
+:END:
+** TODO build a docker image
