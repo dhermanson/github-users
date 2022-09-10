@@ -1,9 +1,17 @@
 * Notes
 My personal notes about the project. Mainly for keeping track of time spent on different tasks
 * Todos
-** TODO add a readme
+** DONE add a readme
 :LOGBOOK:
-CLOCK: [2022-09-10 Sat 07:03]
+- State "DONE"       from "TODO"       [2022-09-10 Sat 07:05] \\
+  readme created
+CLOCK: [2022-09-10 Sat 07:03]--[2022-09-10 Sat 07:05] =>  0:02
 CLOCK: [2022-09-10 Sat 07:01]--[2022-09-10 Sat 07:03] =>  0:02
+:END:
+** DONE add dependencies to the readme
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-10 Sat 07:19] \\
+  added dependencies to the readme
+CLOCK: [2022-09-10 Sat 07:05]--[2022-09-10 Sat 07:19] =>  0:14
 :END:
 ** TODO build a docker image
