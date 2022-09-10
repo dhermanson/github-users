@@ -14,4 +14,17 @@ CLOCK: [2022-09-10 Sat 07:01]--[2022-09-10 Sat 07:03] =>  0:02
   added dependencies to the readme
 CLOCK: [2022-09-10 Sat 07:05]--[2022-09-10 Sat 07:19] =>  0:14
 :END:
+** DONE install java 17 on my machine
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-10 Sat 07:32] \\
+  installed
+CLOCK: [2022-09-10 Sat 07:22]--[2022-09-10 Sat 07:32] =>  0:10
+:END:
 ** TODO build a docker image
+:LOGBOOK:
+CLOCK: [2022-09-10 Sat 07:21]--[2022-09-10 Sat 07:22] =>  0:01
+:END:
+** TODO add docker-compose file
+:LOGBOOK:
+CLOCK: [2022-09-10 Sat 07:20]--[2022-09-10 Sat 07:21] =>  0:01
+:END:
