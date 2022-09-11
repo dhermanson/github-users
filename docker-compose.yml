@@ -4,6 +4,8 @@ services:
 
   app:
     image: github-users:latest
+    environment:
+      -  SPRING_REDIS_HOST=redis
     ports:
       - "8080:8080"
       - "8081:8081"
