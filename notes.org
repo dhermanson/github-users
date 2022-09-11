@@ -36,11 +36,18 @@ CLOCK: [2022-09-10 Sat 07:20]--[2022-09-10 Sat 07:21] =>  0:01
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2022-09-10 Sat 11:29]
 :END:
-** TODO add a user endpoint
+** DONE add a user endpoint
 :LOGBOOK:
-CLOCK: [2022-09-10 Sat 12:18]
+- State "DONE"       from "TODO"       [2022-09-10 Sat 13:01]
+CLOCK: [2022-09-10 Sat 12:18]--[2022-09-10 Sat 13:01] =>  0:43
 CLOCK: [2022-09-10 Sat 11:41]--[2022-09-10 Sat 12:03] =>  0:22
 :END:
+** TODO implement default user service
+:LOGBOOK:
+CLOCK: [2022-09-10 Sat 13:02]--[2022-09-10 Sat 13:29] =>  0:27
+:END:
+** TODO configure cache TTL
+** TODO cache default user service
 ** TODO add redis to compose file
 :LOGBOOK:
 CLOCK: [2022-09-10 Sat 11:29]--[2022-09-10 Sat 11:37] =>  0:08
@@ -48,18 +55,19 @@ CLOCK: [2022-09-10 Sat 11:29]--[2022-09-10 Sat 11:37] =>  0:08
 ** TODO add code formatter
 * Clock
 #+BEGIN: clocktable :scope file :maxlevel 10
-#+CAPTION: Clock summary at [2022-09-10 Sat 12:56]
+#+CAPTION: Clock summary at [2022-09-10 Sat 13:29]
 | Headline                           | Time   |      |
 |------------------------------------+--------+------|
-| *Total time*                       | *1:50* |      |
+| *Total time*                       | *3:00* |      |
 |------------------------------------+--------+------|
-| Todos                              | 1:50   |      |
+| Todos                              | 3:00   |      |
 | \_  add a readme                   |        | 0:04 |
 | \_  add dependencies to the readme |        | 0:14 |
 | \_  install java 17 on my machine  |        | 0:10 |
 | \_  build a docker image           |        | 0:51 |
 | \_  add docker-compose file        |        | 0:01 |
-| \_  add a users endpoint           |        | 0:22 |
+| \_  add a user endpoint            |        | 1:05 |
+| \_  implement default user service |        | 0:27 |
 | \_  add redis to compose file      |        | 0:08 |
 #+END:
 
