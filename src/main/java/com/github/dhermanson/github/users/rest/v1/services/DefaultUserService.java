@@ -2,6 +2,7 @@ package com.github.dhermanson.github.users.rest.v1.services;
 
 import com.github.dhermanson.github.users.infra.github.GithubClient;
 import com.github.dhermanson.github.users.rest.v1.resources.User;
+import com.github.dhermanson.github.users.rest.v1.resources.UserRepo;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,11 @@ public class DefaultUserService implements UserService {
     return githubClient.getUser(username)
         .map(githubUser -> {
 
+          var repos = githubClient.getUserRepositories(username)
+              .stream()
+              .map(it -> new UserRepo(it.name(), it.htmlUrl()))
+              .toList();
+
           return new User(
               githubUser.login(),
               githubUser.name(),
@@ -28,7 +34,7 @@ public class DefaultUserService implements UserService {
               githubUser.email(),
               githubUser.htmlUrl(),
               githubUser.createdAt(),
-              List.of()
+              repos
           );
         });
 

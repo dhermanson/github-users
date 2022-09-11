@@ -1,5 +1,8 @@
 package com.github.dhermanson.github.users.infra.github;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -35,6 +38,20 @@ public class GithubClientImpl implements GithubClient {
       return Optional.ofNullable(response.getBody());
     } catch (HttpClientErrorException.NotFound notFound) {
       return Optional.empty();
+    }
+  }
+
+  @Override
+  public List<Repository> getUserRepositories(String username) {
+    try {
+      var response = rest.getForEntity("/users/%s/repos".formatted(username), Repository[].class);
+      var body = response.getBody();
+      if (body == null) {
+        return Collections.emptyList();
+      }
+      return Arrays.stream(body).toList();
+    } catch (HttpClientErrorException.NotFound notFound) {
+      return Collections.emptyList();
     }
   }
 }
