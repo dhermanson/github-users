@@ -3,14 +3,13 @@ package com.github.dhermanson.github.users.rest.v1.services;
 import com.github.dhermanson.github.users.infra.github.GithubClient;
 import com.github.dhermanson.github.users.rest.v1.resources.User;
 import com.github.dhermanson.github.users.rest.v1.resources.UserRepo;
-import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
-public class DefaultUserService implements UserService {
+public class UserServiceImpl implements UserService {
 
   @Autowired
   private GithubClient githubClient;
