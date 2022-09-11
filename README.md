@@ -52,3 +52,8 @@ These are the ports which must be available by default:
 ```sh
 curl localhost:8081/actuator/health
 ```
+
+### Get User
+```sh
+curl localhost:8080/api/v1/users/octocat
+```
