@@ -16,8 +16,6 @@ services:
       "redis-server",
       "--save", "15", "1",
     ]
-    ports:
-      - "6379:6379"
     volumes:
       - redis_data:/data
 
